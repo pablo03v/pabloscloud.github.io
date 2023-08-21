@@ -1,150 +1,165 @@
 <!DOCTYPE html>
-<html><head>
-    <title>pabloscloud</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/pabloscloud/pabloscloud.github.io/main/961fddeddd9d5603.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-body{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background: #000000;
-    font-family: Tahoma, Geneva, sans-serif;
-}
-.container{
-    width: 30em;
-}
-.head__section img{
-    display: block;
-    margin: 0 auto;
-    height: 5rem;
-    width: 5rem;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.head__section p{
-    text-align: center;
-    color: #fff;
-}
-.social__links ul li{
-    width: 100%;
-    margin: 1.2rem 0;
-    padding: 0.4rem 0.8rem;
-    background: rgba( 255, 255, 255, 0.1 );
-    backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    transition: background 0.25s;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
-}
+<html>
+	<head>
+		<title>pabloscloud</title>
+		<link rel="icon" href="https://raw.githubusercontent.com/pabloscloud/pabloscloud.github.io/main/961fddeddd9d5603.png" type="image/png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			*{
+			    padding: 0;
+			    margin: 0;
+			    box-sizing: border-box;
+			    list-style: none;
+			}
+			a{
+			    text-decoration: none;
+			}
+			body{
+			    height: 100vh;
+			    display: grid;
+			    place-items: center;
+			    background: #000000;
+			    font-family: Tahoma, Geneva, sans-serif;
+			}
+			.container{
+			    width: 30em;
+			}
+			.head__section img{
+			    display: block;
+			    margin: 0 auto;
+			    height: 5rem;
+			    width: 5rem;
+			    object-fit: cover;
+			    border-radius: 50%;
+			}
+			.head__section p{
+			    text-align: center;
+			    color: #fff;
+			}
+			.social__links ul li{
+			    width: 100%;
+			    margin: 1.2rem 0;
+			    padding: 0.4rem 0.8rem;
+			    background: rgba( 255, 255, 255, 0.1 );
+			    backdrop-filter: blur( 0px );
+			    border-radius: 10px;
+			    transition: background 0.25s;
+			    transform-style: preserve-3d;
+			    perspective: 500px;
+			    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
+			}
 
-.social__links ul li a{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: #ffff;
-    font-size: 1rem;
-}
+			.social__links ul li a{
+			    width: 100%;
+			    display: flex;
+			    align-items: center;
+			    color: #ffff;
+			    font-size: 1rem;
+			}
 
-.social__links ul li a span{
-    line-height: 1.4rem;
-}
-.social__links ul .mastodon:hover{
-    background: #595aff;
-}
-.social__links ul .medium:hover{
-    background: #1a8917;
-}
-.social__links ul .github:hover{
-    background: #2f81f7;
-}
-.social__links ul .threema:hover{
-    background: #05a63f;
-}
-.social__links ul .threema:hover{
-    background: #05a63f;
-}
-.social__links ul .bookwyrm:hover{
-    background: #00d1b2;
-}
-.social__links ul .pixelfed:hover{
-    background: #e23983;
-}
+			.social__links ul li a span{
+			    line-height: 1.4rem;
+			}
+			.social__links ul .mastodon:hover{
+			    background: #595aff;
+			}
+			.social__links ul .medium:hover{
+			    background: #1a8917;
+			}
+			.social__links ul .github:hover{
+			    background: #2f81f7;
+			}
+			.social__links ul .threema:hover{
+			    background: #05a63f;
+			}
+			.social__links ul .threema:hover{
+			    background: #05a63f;
+			}
+			.social__links ul .bookwyrm:hover{
+			    background: #00d1b2;
+			}
+			.social__links ul .pixelfed:hover{
+			    background: #e23983;
+			}
+            .social__links ul .donate:hover{
+			    background: #ff5f5f;
+			}
 
-@media only screen and (max-width: 549px) {
-    .container{
-        width: 88vw;
-    }
-  }
-</style>
-  </head>
-  <body>
-    <div class="container">
-  <div class="head__section">
-    <img src="https://raw.githubusercontent.com/pabloscloud/pabloscloud.github.io/main/961fddeddd9d5603.png" alt="">
-    <p>pabloscloud</p>
-  </div>
-  <div class="social__links">
-    <ul id="item">
-      <li class="mastodon">
-        <a rel="me" href="https://tech.lgbt/@pabloscloud">
-          <span>
-            <h4>pabloscloud@tech.lgbt</h4>
-            <p>Follow me on Mastodon</p>
-          </span>
-        </a>
-      </li>
-      <li class="medium">
-        <a href="https://medium.com/@pabloscloud">
-          <span>
-            <h4>pabloscloud</h4>
-            <p>Follow me on Medium</p>
-          </span>
-        </a>
-      </li>
-      <li class="github">
-        <a href="https://github.com/pabloscloud">
-          <span>
-            <h4>pabloscloud</h4>
-            <p>Follow me on GitHub</p>
-          </span>
-        </a>
-      </li>
-      <li class="threema">
-        <a href="https://threema.id/WPBCTXNW">
-          <span>
-            <h4>pabloscloud</h4>
-            <p>Message me securely on Threema</p>
-          </span>
-        </a>
-      </li>
-      <li class="bookwyrm">
-        <a href="https://bookwyrm.social/user/pabloscloud">
-          <span>
-            <h4>pabloscloud@bookwyrm.social</h4>
-            <p>See what I read on Bookwyrm</p>
-          </span>
-        </a>
-      </li>
-      <li class="pixelfed">
-        <a href="https://pixelfed.de/@pabloscloud">
-          <span>
-            <h4>pabloscloud@pixelfed.de</h4>
-            <p>See my images on Pixelfed</p>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-</body></html>
+			@media only screen and (max-width: 549px) {
+			    .container{
+			        width: 88vw;
+			    }
+			  }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="head__section">
+				<img src="https://raw.githubusercontent.com/pabloscloud/pabloscloud.github.io/main/961fddeddd9d5603.png" alt="" />
+				<p>pabloscloud</p>
+			</div>
+			<div class="social__links">
+				<ul id="item">
+					<li class="mastodon">
+						<a rel="me" href="https://tech.lgbt/@pabloscloud">
+							<span>
+								<h4>pabloscloud@tech.lgbt</h4>
+								<p>Follow me on Mastodon</p>
+							</span>
+						</a>
+					</li>
+					<li class="medium">
+						<a href="https://medium.com/@pabloscloud">
+							<span>
+								<h4>pabloscloud</h4>
+								<p>Follow me on Medium</p>
+							</span>
+						</a>
+					</li>
+					<li class="github">
+						<a href="https://github.com/pabloscloud">
+							<span>
+								<h4>pabloscloud</h4>
+								<p>Follow me on GitHub</p>
+							</span>
+						</a>
+					</li>
+					<li class="threema">
+						<a href="https://threema.id/WPBCTXNW">
+							<span>
+								<h4>pabloscloud</h4>
+								<p>Message me securely on Threema</p>
+							</span>
+						</a>
+					</li>
+					<li class="bookwyrm">
+						<a href="https://bookwyrm.social/user/pabloscloud">
+							<span>
+								<h4>pabloscloud@bookwyrm.social</h4>
+								<p>See what I read on Bookwyrm</p>
+							</span>
+						</a>
+					</li>
+					<li class="pixelfed">
+						<a href="https://pixelfed.de/@pabloscloud">
+							<span>
+								<h4>pabloscloud@pixelfed.de</h4>
+								<p>See my images on Pixelfed</p>
+							</span>
+						</a>
+					</li>
+					<br />
+					<br />
+					<li class="donate">
+						<a href="https://buymeacoffee.com/pablosspace">
+							<span>
+								<h4>pablosspace</h4>
+								<p>Donate on buymeacoffee</p>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
