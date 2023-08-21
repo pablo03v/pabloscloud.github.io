@@ -10,6 +10,7 @@
 			    margin: 0;
 			    box-sizing: border-box;
 			    list-style: none;
+			    color: white;
 			}
 			a{
 			    text-decoration: none;
@@ -34,7 +35,6 @@
 			}
 			.head__section p{
 			    text-align: center;
-			    color: #fff;
 			}
 			.social__links ul li{
 			    width: 100%;
@@ -53,7 +53,6 @@
 			    width: 100%;
 			    display: flex;
 			    align-items: center;
-			    color: #ffff;
 			    font-size: 1rem;
 			}
 
@@ -63,27 +62,26 @@
 			.social__links ul .mastodon:hover{
 			    background: #595aff;
 			}
-			.social__links ul .medium:hover{
-			    background: #1a8917;
-			}
 			.social__links ul .github:hover{
 			    background: #2f81f7;
 			}
-			.social__links ul .threema:hover{
-			    background: #05a63f;
+			.social__links ul .medium:hover{
+			    background: #1a8917;
+			}
+			.social__links ul .overload:hover{
+			    background: #825500;
 			}
 			.social__links ul .threema:hover{
 			    background: #05a63f;
-			}
-			.social__links ul .bookwyrm:hover{
-			    background: #00d1b2;
-			}
-			.social__links ul .pixelfed:hover{
-			    background: #e23983;
 			}
             .social__links ul .donate:hover{
 			    background: #ff5f5f;
 			}
+            
+            .social__links h3 {
+                color: white;
+                text-align: center;
+            }
 
 			@media only screen and (max-width: 549px) {
 			    .container{
@@ -100,64 +98,69 @@
 			</div>
 			<div class="social__links">
 				<ul id="item">
-					<li class="mastodon">
-						<a rel="me" href="https://tech.lgbt/@pabloscloud">
+				    <br />
+					<br />
+					<h3>Social Media</h3>
+					<a rel="me" href="https://tech.lgbt/@pabloscloud">
+					    <li class="mastodon">
 							<span>
 								<h4>pabloscloud@tech.lgbt</h4>
 								<p>Follow me on Mastodon</p>
 							</span>
-						</a>
-					</li>
-					<li class="medium">
-						<a href="https://medium.com/@pabloscloud">
-							<span>
-								<h4>pabloscloud</h4>
-								<p>Follow me on Medium</p>
-							</span>
-						</a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/pabloscloud">
+					    </li>
+					</a>
+					<a href="https://github.com/pabloscloud">
+					    <li class="github">
 							<span>
 								<h4>pabloscloud</h4>
 								<p>Follow me on GitHub</p>
 							</span>
-						</a>
-					</li>
-					<li class="threema">
-						<a href="https://threema.id/WPBCTXNW">
+					    </li>
+					</a>
+					<a href="https://medium.com/@pabloscloud">
+					    <li class="medium">
 							<span>
 								<h4>pabloscloud</h4>
-								<p>Message me securely on Threema</p>
+								<p>Follow me on Medium</p>
 							</span>
-						</a>
-					</li>
-					<li class="bookwyrm">
-						<a href="https://bookwyrm.social/user/pabloscloud">
-							<span>
-								<h4>pabloscloud@bookwyrm.social</h4>
-								<p>See what I read on Bookwyrm</p>
-							</span>
-						</a>
-					</li>
-					<li class="pixelfed">
-						<a href="https://pixelfed.de/@pabloscloud">
-							<span>
-								<h4>pabloscloud@pixelfed.de</h4>
-								<p>See my images on Pixelfed</p>
-							</span>
-						</a>
-					</li>
+					    </li>
+					</a>
 					<br />
+					<hr>
 					<br />
-					<li class="donate">
-						<a href="https://buymeacoffee.com/pablosspace">
+					<h3>Projects</h3>
+					<a href="https://codeberg.org/pabloscloud/Overload">
+					    <li class="overload">
+							<span>
+								<h4>Overload</h4>
+								<p>native time tracking for android</p>
+							</span>
+					    </li>
+					</a>
+					<br />
+					<hr>
+					<br />
+					<h3>Donate</h3>
+					<a href="https://buymeacoffee.com/pablosspace">
+					    <li class="donate" id="donate">
 							<span>
 								<h4>pablosspace</h4>
 								<p>Donate on buymeacoffee</p>
 							</span>
-						</a>
-					</li>
+					    </li>
+					</a>
+					<br />
+					<hr>
+					<br />
+					<h3>Chat</h3>
+					<a href="https://threema.id/WPBCTXNW">
+					    <li class="threema">
+							<span>
+								<h4>pabloscloud</h4>
+								<p>Message me securely on Threema</p>
+							</span>
+					    </li>
+					</a>
 				</ul>
 			</div>
 		</div>
