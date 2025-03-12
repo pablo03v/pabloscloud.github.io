@@ -43,37 +43,34 @@
 			}
 			
 			.smile {
-			  width: 1em;
-			  margin-inline: auto;
-			  overflow: hidden;
-			  white-space: nowrap;
-			  margin-block-end: calc(50vh - 1ex);
-			}
-			
-			.smile div {
-			  display: flex;
-			  animation: wink 0.75s steps(1) infinite;
-			}
-			
-			.smile span {
-			  display: inline-block;
-			  width: 1em;
-			}
-			
-			
-			@keyframes wink {
-			  0%,
-			  100% {
-			    translate: 0 0;
-			  }
-			  25%,
-			  75% {
-			    translate: -100% 0;
-			  }
-			  50% {
-			    translate: -200% 0;
-			  }
-			}
+  display: inline-block;
+  width: 1.2em; /* Slightly wider to ensure a clean switch */
+  overflow: hidden;
+  margin-inline: auto;
+  margin-block-end: calc(50vh - 1ex);
+}
+
+.smile div {
+  display: flex;
+  width: 2.4em; /* Ensure both emojis fit properly */
+  animation: wink 0.75s steps(1) infinite;
+}
+
+.smile span {
+  display: inline-block;
+  width: 1.2em; /* Ensures each emoji is properly spaced */
+  text-align: center;
+}
+
+@keyframes wink {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1.2em); /* Move exactly one emoji width */
+  }
+}
+
 		</style>
 	</head>
 	<body>
@@ -89,7 +86,6 @@
 		<div class="smile" role="img" aria-hidden>
 			<div>
 				<span>🙂</span>
-				<span>😉</span>
 				<span>😉</span>
 		  	</div>
 		</div>
